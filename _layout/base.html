@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>{% block title %}Informatyczne zajęcia Franka{% endblock title %}</title>
+</head>
+<body>
+    <header class="site-headings">
+        <h2>Informatyczne zajęcia Franka</h2>
+        <h4>prace domowe i podpowiedzi</h4>
+    </header>
+
+    {% block container %}
+    {% for post in posts %}
+        {% include '_post.html' %}
+    {% endfor %}
+    {% endblock container %}
+
+    {% include '_footer.html' %}
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Ubuntu+Mono');
+
+html, body {
+    margin: 0;
+    padding: 1rem;
+
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+.site-headings {
+    text-align: center;
+
+    margin: 1.5rem 0 3rem 0;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+
+    color: black;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+
+    padding: 3rem;
+}
+
+.post-container {
+    margin: auto;
+
+    max-width: 800px;
+}
+
+.post-container > .dates {
+    margin: 0;
+}
+
+.post-container > .content {
+    margin: 0;
+}
+
+.post-container > .content > h1 {
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+
+    width: 100vw;
+    line-height: 2rem;
+    height: 2rem;
+
+    background: rgb(210, 210, 210);
+}
+
+code {
+    font-family: 'Source Code Pro', 'Ubuntu Mono', monospace !important;
+}
+
+hr {
+    margin: 0;
+}
